@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://levin-lee.github.io/"/>
-  <updated>2022-06-30T14:47:01.765Z</updated>
+  <updated>2022-06-30T15:03:34.937Z</updated>
   <id>http://levin-lee.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我的2022</title>
+    <link href="http://levin-lee.github.io/2022/06/30/%E6%88%91%E7%9A%842022/"/>
+    <id>http://levin-lee.github.io/2022/06/30/%E6%88%91%E7%9A%842022/</id>
+    <published>2022-06-30T15:02:14.000Z</published>
+    <updated>2022-06-30T15:03:34.937Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>2022发生很多事情</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>我的感悟</title>
@@ -294,9 +316,9 @@
     
     
     
-      <category term="编程" scheme="http://levin-lee.github.io/tags/%E7%BC%96%E7%A8%8B/"/>
-    
       <category term="hive" scheme="http://levin-lee.github.io/tags/hive/"/>
+    
+      <category term="编程" scheme="http://levin-lee.github.io/tags/%E7%BC%96%E7%A8%8B/"/>
     
   </entry>
   
@@ -394,9 +416,9 @@
     
     
     
-      <category term="python" scheme="http://levin-lee.github.io/tags/python/"/>
-    
       <category term="编程" scheme="http://levin-lee.github.io/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="python" scheme="http://levin-lee.github.io/tags/python/"/>
     
   </entry>
   

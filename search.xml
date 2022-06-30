@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>我的2022</title>
+      <link href="/2022/06/30/%E6%88%91%E7%9A%842022/"/>
+      <url>/2022/06/30/%E6%88%91%E7%9A%842022/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>2022发生很多事情</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>我的感悟</title>
       <link href="/2022/06/30/%E6%88%91%E7%9A%84%E6%84%9F%E6%82%9F/"/>
       <url>/2022/06/30/%E6%88%91%E7%9A%84%E6%84%9F%E6%82%9F/</url>
@@ -207,9 +220,9 @@
       
         <tags>
             
-            <tag> 编程 </tag>
-            
             <tag> hive </tag>
+            
+            <tag> 编程 </tag>
             
         </tags>
       
@@ -297,9 +310,9 @@
       
         <tags>
             
-            <tag> python </tag>
-            
             <tag> 编程 </tag>
+            
+            <tag> python </tag>
             
         </tags>
       
