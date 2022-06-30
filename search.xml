@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>我的感悟</title>
+      <link href="/2022/06/30/%E6%88%91%E7%9A%84%E6%84%9F%E6%82%9F/"/>
+      <url>/2022/06/30/%E6%88%91%E7%9A%84%E6%84%9F%E6%82%9F/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>我最近的感悟。~~</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>RBF模型分析报告</title>
       <link href="/2022/04/30/RBF%E6%A8%A1%E5%9E%8B%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A/"/>
       <url>/2022/04/30/RBF%E6%A8%A1%E5%9E%8B%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A/</url>
@@ -221,9 +234,9 @@
       
         <tags>
             
-            <tag> linux </tag>
-            
             <tag> 编程 </tag>
+            
+            <tag> linux </tag>
             
         </tags>
       
@@ -284,9 +297,9 @@
       
         <tags>
             
-            <tag> 编程 </tag>
-            
             <tag> python </tag>
+            
+            <tag> 编程 </tag>
             
         </tags>
       

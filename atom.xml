@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://levin-lee.github.io/"/>
-  <updated>2022-04-30T15:03:08.000Z</updated>
+  <updated>2022-06-30T14:47:01.765Z</updated>
   <id>http://levin-lee.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我的感悟</title>
+    <link href="http://levin-lee.github.io/2022/06/30/%E6%88%91%E7%9A%84%E6%84%9F%E6%82%9F/"/>
+    <id>http://levin-lee.github.io/2022/06/30/%E6%88%91%E7%9A%84%E6%84%9F%E6%82%9F/</id>
+    <published>2022-06-30T14:46:08.000Z</published>
+    <updated>2022-06-30T14:47:01.765Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>我最近的感悟。~~</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>RBF模型分析报告</title>
@@ -211,7 +233,7 @@
     <link href="http://levin-lee.github.io/2020/10/18/%E8%AF%BB%E5%B9%B3%E5%87%A1%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%89%E6%84%9F/"/>
     <id>http://levin-lee.github.io/2020/10/18/%E8%AF%BB%E5%B9%B3%E5%87%A1%E7%9A%84%E4%B8%96%E7%95%8C%E6%9C%89%E6%84%9F/</id>
     <published>2020-10-18T11:11:31.000Z</published>
-    <updated>2022-06-29T14:32:21.000Z</updated>
+    <updated>2022-06-29T15:42:01.943Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>我真正的读书历程要从高中开始。很不幸，刚开始接触小说时，就接触了郭敬明和饶雪漫的一系列伤痛青春文学，代表作有《夏至未至》、《悲伤逆流成河》、《离歌》等，曾经一度对那浮藻堆砌的文字深深着迷，差点没把我的思想带偏。等到大学的时候，这个时候有比较明显的风格转变，从青春小说如《草样年华》、到修仙类如《诛仙》、再到金庸古龙的武侠小说，最后再到近现代现实主义文学《白鹿原》、《平凡的世界》等经典著作，感觉自己读书的层次有了明显的提升，更多地考虑是否能从一本书中汲取营养。</p><p>今天就来聊一聊《平凡的世界》，其实这本书在大学的时候就看过了，一直搁置到现在才写观后感也是因为借着这个博客写点东西。从我看到这本书开始，我几乎是一口气读完这本小说，真的是太精彩。这本书不仅能让你去了解那段尘封的历史，感受历史的厚重感，也能从书中角色中看到自己的影子。</p><p>我曾不止一次向她极力推荐这本书，心中最好看的一本书。我一直认为，她和田晓霞是高度匹配的一个人，她独立、坚强、热情似火、高雅而不高傲，具有女性一切的美好品质。当我深入读着这本书的时候，不知不觉，脑海中田晓霞的形象和她渐渐重合，直至完全融合，眼前浮现着她的面容。</p>]]></content>
     
@@ -297,9 +319,9 @@
       <category term="shell" scheme="http://levin-lee.github.io/categories/shell/"/>
     
     
-      <category term="linux" scheme="http://levin-lee.github.io/tags/linux/"/>
-    
       <category term="编程" scheme="http://levin-lee.github.io/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="linux" scheme="http://levin-lee.github.io/tags/linux/"/>
     
   </entry>
   
@@ -372,9 +394,9 @@
     
     
     
-      <category term="编程" scheme="http://levin-lee.github.io/tags/%E7%BC%96%E7%A8%8B/"/>
-    
       <category term="python" scheme="http://levin-lee.github.io/tags/python/"/>
+    
+      <category term="编程" scheme="http://levin-lee.github.io/tags/%E7%BC%96%E7%A8%8B/"/>
     
   </entry>
   
