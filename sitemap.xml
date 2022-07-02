@@ -221,14 +221,14 @@
   </url>
   
   <url>
-    <loc>http://levin-lee.github.io/tags/spark/</loc>
+    <loc>http://levin-lee.github.io/tags/python/</loc>
     <lastmod>2022-07-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://levin-lee.github.io/tags/python/</loc>
+    <loc>http://levin-lee.github.io/tags/spark/</loc>
     <lastmod>2022-07-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -242,14 +242,21 @@
   </url>
   
   <url>
-    <loc>http://levin-lee.github.io/tags/%E9%9A%8F%E7%AC%94/</loc>
+    <loc>http://levin-lee.github.io/tags/%E5%8C%97%E6%BC%82/</loc>
     <lastmod>2022-07-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://levin-lee.github.io/tags/%E5%8C%97%E6%BC%82/</loc>
+    <loc>http://levin-lee.github.io/tags/%E5%8D%97%E6%BC%82/</loc>
+    <lastmod>2022-07-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://levin-lee.github.io/tags/%E9%9A%8F%E7%AC%94/</loc>
     <lastmod>2022-07-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -270,7 +277,7 @@
   </url>
   
   <url>
-    <loc>http://levin-lee.github.io/tags/%E5%8D%97%E6%BC%82/</loc>
+    <loc>http://levin-lee.github.io/tags/%E8%AF%BB%E4%B9%A6/</loc>
     <lastmod>2022-07-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -285,13 +292,6 @@
   
   <url>
     <loc>http://levin-lee.github.io/tags/%E9%A3%8E%E6%8E%A7%E6%A8%A1%E5%9E%8B/</loc>
-    <lastmod>2022-07-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://levin-lee.github.io/tags/%E8%AF%BB%E4%B9%A6/</loc>
     <lastmod>2022-07-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
