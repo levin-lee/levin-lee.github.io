@@ -1,171 +1,1977 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Levin-lee - Levin-lee的个人博客</title><meta name="description" content="要么赶紧去死，要么精彩地活"><meta name="author" content="Levin lee"><meta name="copyright" content="Levin lee"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://levin-lee.github.io/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="website"><meta property="og:title" content="Levin-lee"><meta property="og:url" content="http://levin-lee.github.io/"><meta property="og:site_name" content="Levin-lee"><meta property="og:description" content="要么赶紧去死，要么精彩地活"><meta property="og:image" content="http://levin-lee.github.io/img/avatar.png"><meta property="article:published_time" content="2022-06-30T15:03:53.962Z"><meta property="article:modified_time" content="2022-06-30T15:03:53.962Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
-  document.documentElement.setAttribute('data-theme', 'dark')
-  if (document.querySelector('meta[name="theme-color"]') !== null) {
-    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
-  }
-}
-var activateLightMode = function () {
-  document.documentElement.setAttribute('data-theme', 'light')
-  if (document.querySelector('meta[name="theme-color"]') !== null) {
-    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
-  }
-}
+<!DOCTYPE html>
 
-var getCookies = function (name) {
-  const value = `; ${document.cookie}`
-  const parts = value.split(`; ${name}=`)
-  if (parts.length === 2) return parts.pop().split(';').shift()
-}
 
-var autoChangeMode = 'false'
-var t = getCookies('theme')
-if (autoChangeMode === '1') {
-  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
-  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
-  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
-  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
 
-  if (t === undefined) {
-    if (isLightMode) activateLightMode()
-    else if (isDarkMode) activateDarkMode()
-    else if (isNotSpecified || hasNoSupport) {
-      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
-      var now = new Date()
-      var hour = now.getHours()
-      var isNight = hour <= 6 || hour >= 18
-      isNight ? activateDarkMode() : activateLightMode()
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+  
+
+
+  <link rel="alternate" href="/atom.xml" title="Levin-lee" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="要么赶紧去死，要么精彩地活">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Levin-lee">
+<meta property="og:url" content="http://levin-lee.github.io/index.html">
+<meta property="og:site_name" content="Levin-lee">
+<meta property="og:description" content="要么赶紧去死，要么精彩地活">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Levin lee">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
-    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
-      if (Cookies.get('theme') === undefined) {
-        e.matches ? activateDarkMode() : activateLightMode()
-      }
-    })
-  } else if (t === 'light') activateLightMode()
-  else activateDarkMode()
-} else if (autoChangeMode === '2') {
-  now = new Date()
-  hour = now.getHours()
-  isNight = hour <= 6 || hour >= 18
-  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
-  else if (t === 'light') activateLightMode()
-  else activateDarkMode()
-} else {
-  if (t === 'dark') activateDarkMode()
-  else if (t === 'light') activateLightMode()
-}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
-  root: '/',
-  hexoversion: '4.2.1',
-  algolia: undefined,
-  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
-  translate: undefined,
-  noticeOutdate: undefined,
-  copy: {
-    success: '复制成功',
-    error: '复制错误',
-    noSupport: '浏览器不支持'
-  },
-  bookmark: {
-    message_prev: '按',
-    message_next: '键将本页加入书签'
-  },
-  runtime_unit: '天',
-  runtime: false,
-  copyright: undefined,
-  ClickShowText: undefined,
-  medium_zoom: false,
-  fancybox: true,
-  Snackbar: undefined,
-  justifiedGallery: {
-    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
-    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
-  },
-  baiduPush: false,
-  highlightCopy: true,
-  highlightLang: true,
-  isPhotoFigcaption: false,
-  islazyload: true,
-  isanchor: false    
-}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
-  isPost: false,
-  isHome: true,
-  isHighlightShrink: false,
-  isSidebar: false,
-  postUpdate: '2022-06-30 23:03:53'
-}</script><noscript><style>
-#nav {
-  opacity: 1
-}
-.justified-gallery img {
-  opacity: 1
-}
-</style></noscript><meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="Levin-lee" type="application/atom+xml">
-</head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">19</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">15</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">1</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page" href="/books/"><i class="fa-fw fas fa-book"></i><span> 书籍</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div id="body-wrap"><div id="web_bg" data-type="photo"></div><header class="full_page" id="page-header" style="background-image: url(/img/name.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">Levin-lee</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page" href="/books/"><i class="fa-fw fas fa-book"></i><span> 书籍</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="site-info"><h1 id="site_title">Levin-lee</h1><div id="site_subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/levin-lee" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:897992093@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll_down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout_page" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2022/06/30/%E6%88%91%E7%9A%842022/" title="我的2022">     <img class="post_bg" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="我的2022"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/06/30/%E6%88%91%E7%9A%842022/" title="我的2022">我的2022</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-06-30T15:02:14.000Z" title="发表于 2022-06-30 23:02:14">2022-06-30</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-06-30T15:03:34.937Z" title="更新于 2022-06-30 23:03:34">2022-06-30</time></span></div><div class="content">2022发生很多事情
-</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2022/06/30/%E6%88%91%E7%9A%84%E6%84%9F%E6%82%9F/" title="我的感悟">     <img class="post_bg" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="我的感悟"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/06/30/%E6%88%91%E7%9A%84%E6%84%9F%E6%82%9F/" title="我的感悟">我的感悟</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-06-30T14:46:08.000Z" title="发表于 2022-06-30 22:46:08">2022-06-30</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-06-30T14:47:01.765Z" title="更新于 2022-06-30 22:47:01">2022-06-30</time></span></div><div class="content">我最近的感悟。~~
-</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2022/04/30/RBF%E6%A8%A1%E5%9E%8B%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A/" title="RBF模型分析报告">     <img class="post_bg" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="RBF模型分析报告"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/04/30/RBF%E6%A8%A1%E5%9E%8B%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A/" title="RBF模型分析报告">RBF模型分析报告</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-04-30T14:18:42.000Z" title="发表于 2022-04-30 22:18:42">2022-04-30</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-04-30T15:03:08.000Z" title="更新于 2022-04-30 23:03:08">2022-04-30</time></span></div><div class="content">描述性统计
-会员开通的年龄分布从图中可以看出，在2012年以前，会员迅速递增，在13年断崖式下跌
-
-会员的性别分布从图中我们知道，男性会员占据了77.1%的比例
-
-会员的年龄分布会员的年龄分布基本在40岁左右
+  };
+</script>
 
 
-K-means 建模聚类结果通过LRBFC数据构建k-means的结果如下，分成了5类客户
-客户与LRBFC数据结果的热力图如下，表中数据为相关性
-GMM 建模聚类结果GMM建模的结果如下，我们可以看出GMM能过较好区分5种类别的客户
-</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/12/03/%E4%BA%BA%E7%94%9F%E5%9B%B0%E6%83%91-11%E6%9C%88%E4%BB%BD%E5%B0%8F%E8%AE%B0/" title="人生困惑-11月份小记">     <img class="post_bg" data-lazy-src="https://pic1.zhimg.com/80/v2-b4ff34d17f61da76450ed1fe4d6fcdaa_1440w.jpg?source=1940ef5c" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="人生困惑-11月份小记"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/03/%E4%BA%BA%E7%94%9F%E5%9B%B0%E6%83%91-11%E6%9C%88%E4%BB%BD%E5%B0%8F%E8%AE%B0/" title="人生困惑-11月份小记">人生困惑-11月份小记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-12-02T16:59:25.000Z" title="发表于 2021-12-03 00:59:25">2021-12-03</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-06-29T14:33:23.377Z" title="更新于 2022-06-29 22:33:23">2022-06-29</time></span></div><div class="content">最近异常焦虑，导致我近段时间有点萎靡不振，但是到晚上睡觉时，却翻来覆去，怎么也睡不着。
-事情的起因是因为喜欢上了一个女生，她叫张静，我在公司 bbs浏览帖子的时候，发现了她的交友贴，当时看t她照片的时候，并没有觉得她很好看，但是还蛮有个性，觉得可以认识一下，于是我是加了她微信好友。刚开始的时候，聊的特别开心，仿佛有说不完的话，我早上会想跟她聊，晚上下班也跟她聊，越聊越投机（事后证明可能只有我是这样），了解了她的很多往事。就这样，我们一起相互交流、相互了解、相互认识，我对她的好感越来越深。终于，在一个周六的时候，我把她约出来，当时吃的泰国菜。不得不承认，当面看她还是比较可爱，通过面对面的交流，我感觉更加喜欢她了。往后的一周，我约了她一起爬山，爬山的过程也很愉快，她应该是很少爬山，有点体力不支，我们成功下山，去了海上世界去吃了饭，她也恢复了过来，我们聊到了9点半，各自回家。我很喜欢她。但是自从爬完山后，渐渐地我发现，她开始变得有些冷漠，从聊天过程，可以明显可以感觉她的语气变得生冷。早上发的一句话，直到晚上才回复。我很难受，我一直以为是自己的问题，不够关心、不够呵护她，但是经过被冷淡处理几次 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/11/27/hexo/" title="Hexo">     <img class="post_bg" data-lazy-src="https://pic3.zhimg.com/80/v2-6e9ba2ce937f781e13550a912851a58e_1440w.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hexo"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/11/27/hexo/" title="Hexo">Hexo</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-11-27T07:16:59.000Z" title="发表于 2021-11-27 15:16:59">2021-11-27</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-06-29T15:39:41.013Z" title="更新于 2022-06-29 23:39:41">2022-06-29</time></span></div><div class="content">Welcome to visit my blog!  This is my first blog which is build by hexo.  If you find solution how to build youself blog by visit my papers.
-How to create a blog by youself.
-Quick StartHexoinstall homebrew
-12&#x2F;bin&#x2F;zsh -c &quot;$(curl -fsSL https:&#x2F;&#x2F;gitee.com&#x2F;cunkai&#x2F;HomebrewCN&#x2F;raw&#x2F;master&#x2F;Homebrew.sh)”source &#x2F;Users&#x2F;lelingshan&#x2F;.zprofile
-install node
-12npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.orgbrew install node
-Install  ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/11/27/RDD%E5%87%BD%E6%95%B0%E5%A4%A7%E5%85%A8/" title="RDD函数大全">     <img class="post_bg" data-lazy-src="https://pic2.zhimg.com/80/v2-029fb7a5d9f9dbff547ca7ba91f35cf9_1440w.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="RDD函数大全"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/11/27/RDD%E5%87%BD%E6%95%B0%E5%A4%A7%E5%85%A8/" title="RDD函数大全">RDD函数大全</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-11-27T06:20:45.000Z" title="发表于 2021-11-27 14:20:45">2021-11-27</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-11-27T07:08:16.000Z" title="更新于 2021-11-27 15:08:16">2021-11-27</time></span></div><div class="content">map
-是对 RDD 中的每个元素都执行一个指定的函数来产生一个新的 RDD。 任何 原 RDD 中的元素在新 RDD 中都有且只有一个元素与之对应。 举例： 
 
-12345scala&gt;val a&#x3D;sc.parallelize(1to9,3) scala&gt;val b&#x3D;a.map(x&#x3D;&gt;x*2) scala&gt;a.collect res10:Array[Int]&#x3D;Array(1,2,3,4,5,6,7,8,9) scala&gt;b.collect res11:Array[Int]&#x3D;Array(2,4,6,8,10,12,14,16,18) &#x2F;&#x2F;上述例子中把原 RDD 中每个元素都乘以 2 来产生一个新的 RDD。
-filter
-filter 是对 RDD 中的每个元素都执行一个指定的函数来过滤产生一个新的 RDD。 任何原 RDD 中的元素在新 RDD 中都有且只有一个元素与之对应。
+  <link rel="canonical" href="http://levin-lee.github.io/"/>
 
-123val rdd&#x3D;sc.parallelize(List(1,2,3,4,5,6)) val f ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/06/19/spark-%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92/" title="spark-逻辑回归">     <img class="post_bg" data-lazy-src="https://pica.zhimg.com/80/v2-47e51546ebf1aa028f641bfe578e07b0_1440w.jpg?source=1940ef5c" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="spark-逻辑回归"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/06/19/spark-%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92/" title="spark-逻辑回归">spark-逻辑回归</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-06-19T13:26:50.000Z" title="发表于 2021-06-19 21:26:50">2021-06-19</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-12-02T17:10:57.000Z" title="更新于 2021-12-03 01:10:57">2021-12-03</time></span></div><div class="content">代码实例1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253import org.apache.log4j.&#123; Level, Logger &#125;import org.apache.spark.&#123; SparkConf, SparkContext &#125;import org.apache.spark.mllib.regression.LinearRegressionWithSGDimport org.apache.spark.mllib.util.MLUtilsimport org.apache.spark.mllib.regression.LabeledPointimport org.apache.spark.mllib.linalg.Vectorsimport org.apache.spark.mllib.regression.LinearRegressionModelobject LinearRegressio ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/06/19/spark-%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/" title="spark-线性回归">     <img class="post_bg" data-lazy-src="https://pica.zhimg.com/80/v2-82068a2b6e53002cc203a6d47cefcee4_1440w.jpg?source=1940ef5c" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="spark-线性回归"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/06/19/spark-%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/" title="spark-线性回归">spark-线性回归</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-06-19T13:24:24.000Z" title="发表于 2021-06-19 21:24:24">2021-06-19</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-11-27T06:53:01.000Z" title="更新于 2021-11-27 14:53:01">2021-11-27</time></span></div><div class="content">代码实例123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657import org.apache.hadoop.util.XMLUtilsimport org.apache.log4j.&#123;Level, Logger&#125;import org.apache.spark.ml.classification.LogisticRegressionModelimport org.apache.spark.mllib.classification.LogisticRegressionWithLBFGSimport org.apache.spark.mllib.evaluation.MulticlassMetricsimport org.apache.spark.mllib.util.MLUtilsimport org.apache.spark.&#123;SparkConf, SparkContext&#125;import o ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/05/29/%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BC%B0/" title="模型评估">     <img class="post_bg" data-lazy-src="https://pica.zhimg.com/80/v2-90258f7dc4fa9e2fddab19b871da1629_1440w.jpg?source=1940ef5c" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="模型评估"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/05/29/%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BC%B0/" title="模型评估">模型评估</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-05-29T03:56:18.000Z" title="发表于 2021-05-29 11:56:18">2021-05-29</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-12-02T17:09:35.000Z" title="更新于 2021-12-03 01:09:35">2021-12-03</time></span></div><div class="content">模型评估是验证模型准确率最重要的一步，常用的模型评估指标有AUC、ROC、精准率、召回率、KS、lift、模型稳定性PSI等。此外还可以利用F检验来验证模型是否显著的统计性假设检验。 1、ROC（接受者操作曲线） 2、AUC AUC的物理意义伟ROC曲线下的面积，一般情况下AUC越大，表示的模型的效果越好。AUC主要由两部分所影响。
 
-精准率
-召回率
 
- 3、KS KS金融模型评估领域中运用十分广泛，尤其在信贷行业，它可以验证模型区分好人坏人的能力，KS计算公式为：ks = max(Cum.Bi/Bad_total - Cum.Gi/Good_total)计算KS的代码如下：法一：12345from scipy.stats import ks_2samp get_ks &#x3D; lambda y_pred,y_true: ks_2samp(y_pred[y_true&#x3D;&#x3D;1], y_pred[y_true!&#x3D;1]).statistic get_ks(x,y)
-法二：123456789101112131415161718192021Import panda ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/02/01/2020%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/" title="2020年终总结">     <img class="post_bg" data-lazy-src="https://pic1.zhimg.com/v2-e78248550dde4446edbf020981c504fb_1440w.jpg?source=172ae18b" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2020年终总结"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/02/01/2020%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/" title="2020年终总结">2020年终总结</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-02-01T03:48:49.000Z" title="发表于 2021-02-01 11:48:49">2021-02-01</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-11-07T14:47:21.000Z" title="更新于 2021-11-07 22:47:21">2021-11-07</time></span></div><div class="content">2020年临近尾声，我也不能免俗，感觉是时候对自己这一年发个总结，不管是好是坏，也是我经历的人生呀：这一年发生了很多事情，现在想想都感觉很梦幻。
 
-1.家属患了淋巴瘤，目前还在化疗中;
-2.从北漂转变为深漂，换了工作和地点，不变的是独孤的心;
-3.交了女朋友，然后迅速就分了;
-4.贯穿全年的新冠疫情;
-5.股市
 
-当我知道听我爸说去医院看病的时候，起初我还不以为意，只道是平常的肿大，看看病吃吃药，修养几天就好，但万万没想到化验结果让我傻眼，竟然是淋巴瘤，顿时晴天霹雳，惆怅不已，根本没想到我爸还会得病，他身体那么好，怎么就突然得了淋巴瘤了呢。后来他自己透露，每天干活接触很多刺鼻性化学物质。我一直认为中国的农民是很傻的一群人，只知道拼命干最苦最累最脏的活赚钱，莫不知，当你身体被折磨到累倒后，你赚的钱远远无法满足治疗费用，这就是一笔不能做的买卖，但大多人永远也想不到这一点。化疗是个很痛苦的过程，全身插满管子，6次疗程，治疗费用高昂，而我却无能为力，治愈率也不清楚，还是自己太无能，什么忙也帮不上。
-20年，我换了城市，换了工作。好像一起都往更好的方向发展，欣欣向荣。但只有自己知道，一切其实也没 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" data-lazy-src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Levin lee</div><div class="author-info__description">要么赶紧去死，要么精彩地活</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives"><div class="headline">文章</div><div class="length_num">19</div></a></div><div class="card-info-data-item is-center">      <a href="/tags"><div class="headline">标签</div><div class="length_num">15</div></a></div><div class="card-info-data-item is-center"><a href="/categories"><div class="headline">分类</div><div class="length_num">1</div></a></div></div><a class="button--animated" id="card-info-btn" href="https://github.com/levin-lee" target="_blank" rel="noopener"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/levin-lee" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:897992093@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-recent-item"><div class="aside-recent-post"><a class="aside-post-cover" href="/2022/06/30/%E6%88%91%E7%9A%842022/" title="我的2022"><img class="aside-post-bg" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="我的2022"/></a><div class="aside-post-info"><a class="aside-post-title" href="/2022/06/30/%E6%88%91%E7%9A%842022/" title="我的2022">我的2022</a><time class="aside-post_meta post-meta-date" datetime="2022-06-30T15:02:14.000Z" title="发表于 2022-06-30 23:02:14">2022-06-30</time></div></div><div class="aside-recent-post"><a class="aside-post-cover" href="/2022/06/30/%E6%88%91%E7%9A%84%E6%84%9F%E6%82%9F/" title="我的感悟"><img class="aside-post-bg" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="我的感悟"/></a><div class="aside-post-info"><a class="aside-post-title" href="/2022/06/30/%E6%88%91%E7%9A%84%E6%84%9F%E6%82%9F/" title="我的感悟">我的感悟</a><time class="aside-post_meta post-meta-date" datetime="2022-06-30T14:46:08.000Z" title="发表于 2022-06-30 22:46:08">2022-06-30</time></div></div><div class="aside-recent-post"><a class="aside-post-cover" href="/2022/04/30/RBF%E6%A8%A1%E5%9E%8B%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A/" title="RBF模型分析报告"><img class="aside-post-bg" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="RBF模型分析报告"/></a><div class="aside-post-info"><a class="aside-post-title" href="/2022/04/30/RBF%E6%A8%A1%E5%9E%8B%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A/" title="RBF模型分析报告">RBF模型分析报告</a><time class="aside-post_meta post-meta-date" datetime="2022-04-30T14:18:42.000Z" title="发表于 2022-04-30 22:18:42">2022-04-30</time></div></div><div class="aside-recent-post"><a class="aside-post-cover" href="/2021/12/03/%E4%BA%BA%E7%94%9F%E5%9B%B0%E6%83%91-11%E6%9C%88%E4%BB%BD%E5%B0%8F%E8%AE%B0/" title="人生困惑-11月份小记"><img class="aside-post-bg" data-lazy-src="https://pic1.zhimg.com/80/v2-b4ff34d17f61da76450ed1fe4d6fcdaa_1440w.jpg?source=1940ef5c" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="人生困惑-11月份小记"/></a><div class="aside-post-info"><a class="aside-post-title" href="/2021/12/03/%E4%BA%BA%E7%94%9F%E5%9B%B0%E6%83%91-11%E6%9C%88%E4%BB%BD%E5%B0%8F%E8%AE%B0/" title="人生困惑-11月份小记">人生困惑-11月份小记</a><time class="aside-post_meta post-meta-date" datetime="2021-12-02T16:59:25.000Z" title="发表于 2021-12-03 00:59:25">2021-12-03</time></div></div><div class="aside-recent-post"><a class="aside-post-cover" href="/2021/11/27/hexo/" title="Hexo"><img class="aside-post-bg" data-lazy-src="https://pic3.zhimg.com/80/v2-6e9ba2ce937f781e13550a912851a58e_1440w.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hexo"/></a><div class="aside-post-info"><a class="aside-post-title" href="/2021/11/27/hexo/" title="Hexo">Hexo</a><time class="aside-post_meta post-meta-date" datetime="2021-11-27T07:16:59.000Z" title="发表于 2021-11-27 15:16:59">2021-11-27</time></div></div></div></div></div><div class="card-widget card-categories"><div class="card-content"><div class="item-headline"><i class="fas fa-folder-open"></i><span>分类</span></div><ul class="card-category-list">
-            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/shell/"><span class="card-category-list-name">shell</span><span class="card-category-list-count">1</span></a></li>
-                       
-            </ul></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/hive/" style="font-size: 16px; color: #999">hive</a> <a href="/tags/linux/" style="font-size: 16px; color: #999">linux</a> <a href="/tags/python/" style="font-size: 16px; color: #999">python</a> <a href="/tags/spark/" style="font-size: 20px; color: #99a4b2">spark</a> <a href="/tags/%E5%8C%97%E6%BC%82/" style="font-size: 16px; color: #999">北漂</a> <a href="/tags/%E5%8D%97%E6%BC%82/" style="font-size: 16px; color: #999">南漂</a> <a href="/tags/%E6%84%9F%E6%82%9F/" style="font-size: 22px; color: #99a9bf">感悟</a> <a href="/tags/%E6%8A%95%E8%B5%84/" style="font-size: 16px; color: #999">投资</a> <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" style="font-size: 18px; color: #999ea6">机器学习</a> <a href="/tags/%E6%A8%A1%E5%9E%8B/" style="font-size: 16px; color: #999">模型</a> <a href="/tags/%E7%BC%96%E7%A8%8B/" style="font-size: 20px; color: #99a4b2">编程</a> <a href="/tags/%E8%AF%84%E5%88%86%E5%8D%A1/" style="font-size: 16px; color: #999">评分卡</a> <a href="/tags/%E8%AF%BB%E4%B9%A6/" style="font-size: 16px; color: #999">读书</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 16px; color: #999">随笔</a> <a href="/tags/%E9%A3%8E%E6%8E%A7%E6%A8%A1%E5%9E%8B/" style="font-size: 16px; color: #999">风控模型</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/06/"><span class="card-archive-list-date">六月 2022</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/04/"><span class="card-archive-list-date">四月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/12/"><span class="card-archive-list-date">十二月 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/11/"><span class="card-archive-list-date">十一月 2021</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/06/"><span class="card-archive-list-date">六月 2021</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/05/"><span class="card-archive-list-date">五月 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/02/"><span class="card-archive-list-date">二月 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/10/"><span class="card-archive-list-date">十月 2020</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item more is-center"><a class="card-archive-list-link-more" href="/archives">
-              <span>查看更多</span><i class="fas fa-angle-right"  ></i></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="webinfo-article-name">文章数目 :</div><div class="webinfo-article-count">19</div></div><div class="webinfo-item">      <div class="webinfo-site-uv-name">本站访客数 :</div><div class="webinfo-site-uv-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="webinfo-site-name">本站总访问量 :</div><div class="webinfo-site-pv-count" id="busuanzi_value_site_pv"></div></div></div></div></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Levin lee</div><div class="framework-info"><span>框架 </span><a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my blog!</div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener" style="color:#49B1F5;">hexo-generator-search</a>
- <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function subtitleType () {
-  if (true) { 
-    var typed = new Typed("#subtitle", {
-      strings: "要么赶紧去死&#44;要么精彩地活,我想起夕阳下的奔跑 那是我逝去的青春".split(","),
-      startDelay: 300,
-      typeSpeed: 150,
-      loop: false,
-      backSpeed: 50
-    })
-  } else {
-    document.getElementById("subtitle").innerHTML = '要么赶紧去死&#44;要么精彩地活'
+  <title>Levin-lee</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Levin-lee</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Levin-lee的个人博客</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
+            
+            Schedule
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-sitemap">
+          <a href="/sitemap.xml%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
+            
+            Sitemap
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            Commonweal 404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://levin-lee.github.io/2022/06/30/%E6%88%91%E7%9A%842022/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Levin lee">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Levin-lee">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2022/06/30/%E6%88%91%E7%9A%842022/" itemprop="url">我的2022</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-06-30T23:02:14+08:00">
+                2022-06-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>2022发生很多事情</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://levin-lee.github.io/2022/06/30/%E6%88%91%E7%9A%84%E6%84%9F%E6%82%9F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Levin lee">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Levin-lee">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2022/06/30/%E6%88%91%E7%9A%84%E6%84%9F%E6%82%9F/" itemprop="url">我的感悟</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-06-30T22:46:08+08:00">
+                2022-06-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>我最近的感悟。~~</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://levin-lee.github.io/2022/04/30/RBF%E6%A8%A1%E5%9E%8B%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Levin lee">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Levin-lee">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2022/04/30/RBF%E6%A8%A1%E5%9E%8B%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A/" itemprop="url">RBF模型分析报告</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-04-30T22:18:42+08:00">
+                2022-04-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="描述性统计"><a href="#描述性统计" class="headerlink" title="描述性统计"></a>描述性统计</h1><ul>
+<li><p>会员开通的年龄分布<br>从图中可以看出，在2012年以前，会员迅速递增，在13年断崖式下跌<br><img src="/img/year.png" alt="向左走，向右走"></p>
+</li>
+<li><p>会员的性别分布<br>从图中我们知道，男性会员占据了77.1%的比例<br><img src="/img/gender.png" alt="向左走，向右走"></p>
+</li>
+<li><p>会员的年龄分布<br>会员的年龄分布基本在40岁左右<br><img src="/img/age.png" alt="向左走，向右走"></p>
+</li>
+</ul>
+<h1 id="K-means-建模聚类结果"><a href="#K-means-建模聚类结果" class="headerlink" title="K-means 建模聚类结果"></a>K-means 建模聚类结果</h1><p>通过LRBFC数据构建k-means的结果如下，分成了5类客户<br><img src="/img/k-means.png" alt="向左走，向右走"></p>
+<p>客户与LRBFC数据结果的热力图如下，表中数据为相关性<br><img src="/img/k-corr.png" alt="向左走，向右走"></p>
+<h1 id="GMM-建模聚类结果"><a href="#GMM-建模聚类结果" class="headerlink" title="GMM 建模聚类结果"></a>GMM 建模聚类结果</h1><p>GMM建模的结果如下，我们可以看出GMM能过较好区分5种类别的客户<br><img src="/img/gmm.png" alt="向左走，向右走"></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://levin-lee.github.io/2021/12/03/%E4%BA%BA%E7%94%9F%E5%9B%B0%E6%83%91-11%E6%9C%88%E4%BB%BD%E5%B0%8F%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Levin lee">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Levin-lee">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/12/03/%E4%BA%BA%E7%94%9F%E5%9B%B0%E6%83%91-11%E6%9C%88%E4%BB%BD%E5%B0%8F%E8%AE%B0/" itemprop="url">人生困惑-11月份小记</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-12-03T00:59:25+08:00">
+                2021-12-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>最近异常焦虑，导致我近段时间有点萎靡不振，但是到晚上睡觉时，却翻来覆去，怎么也睡不着。</p>
+<p>事情的起因是因为喜欢上了一个女生，她叫张静，我在公司 bbs浏览帖子的时候，发现了她的交友贴，当时看t她照片的时候，并没有觉得她很好看，但是还蛮有个性，觉得可以认识一下，于是我<br>是加了她微信好友。刚开始的时候，聊的特别开心，仿佛有说不完的话，我早上会想跟她聊，晚上下班也跟她聊，越聊越投机（事后证明可能只有我是这样），了解了她的很多往事。就这样，我们一起相互交流、相互了解、相互认识，我对她的好感越来越深。终于，在一个周六的时候，我把她约出来，当时吃的泰国菜。不得不承认，当面看她还是比较可爱，通过面对面的交流，我感觉更加喜欢她了。往后的一周，我约了她一起爬山，爬山的过程也很愉快，她应该是很少爬山，有点体力不支，我们成功下山，去了海上世界去吃了饭，她也恢复了过来，我们聊到了9点半，各自回家。我很喜欢她。<br>但是自从爬完山后，渐渐地我发现，她开始变得有些冷漠，从聊天过程，可以明显可以感觉她的语气变得生冷。早上发的一句话，直到晚上才回复。我很难受，我一直以为是自己的问题，不够关心、不够呵护她，但是经过被冷淡处理几次之后，终于我选择问她，她的回答也是那么俗套，“你很好，但是我们习俗和习惯不一样，从以后的发展来看不适合在一起，不用花时间浪费在她身上”。那一瞬间，心如死灰，我想是时候结束这么难受的感觉了。我们的习俗不一样，是早就存在的事情，我也多次跟确认，得到的回复都说大家都在深圳，是没关系的。而且她多次跟我表示，深圳房价很贵，两个人可以携手，就会简单一些。算了，一起都过去了，只是会想起来，依旧觉得伤感，我这么喜欢她。</p>
+<p>人生三大悲剧，”怨憎会，爱别离，求不得“。</p>
+<p><img src="/img/zhangjing.jpg" alt=""></p>
+<p>附上她的交友信息</p>
+<blockquote>
+<p>关于自己：<br>94年，来自湖北荆州，硕士研究生，在深圳从事金融行业，比较独立但也需要一个值得依赖的人，比较感性，对事物有自己的见解～<br>期待的他：90年-94年，170+，本科及以上～未来能在深圳定居并且愿意一起共同努力为之奋斗！希望对方拥有的特质：有责任心，爱沟通，愿意分担家务，有换位思考的能力，不情绪化<br>微信号: XXXXXX</p>
+</blockquote>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://levin-lee.github.io/2021/11/27/hexo/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Levin lee">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Levin-lee">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/11/27/hexo/" itemprop="url">Hexo</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-11-27T15:16:59+08:00">
+                2021-11-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Welcome to visit my blog!  This is my first blog which is build by hexo.  If you find solution how to build youself blog by visit my papers.</p>
+<p>How to create a blog by youself.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h3><p>install homebrew</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;bin&#x2F;zsh -c &quot;$(curl -fsSL https:&#x2F;&#x2F;gitee.com&#x2F;cunkai&#x2F;HomebrewCN&#x2F;raw&#x2F;master&#x2F;Homebrew.sh)”</span><br><span class="line">source &#x2F;Users&#x2F;lelingshan&#x2F;.zprofile</span><br></pre></td></tr></table></figure>
+<p>install node</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org</span><br><span class="line">brew install node</span><br></pre></td></tr></table></figure>
+<p>Install hexo</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<h3 id="Git-build"><a href="#Git-build" class="headerlink" title="Git build"></a>Git build</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C 897992093@qq.com</span><br><span class="line">ls -al ~&#x2F;.ssh </span><br><span class="line">cat ~&#x2F;.ssh&#x2F;id_rsa.pub</span><br><span class="line">git config --global user.name &quot;GitHub用户名&quot;</span><br><span class="line">git config --global user.email &quot;GitHub的邮箱”</span><br></pre></td></tr></table></figure>
+<p>and to remote the orgin master </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git remote add origin git@github.com:levin-lee&#x2F;levin-lee.github.io.git</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://levin-lee.github.io/2021/11/27/RDD%E5%87%BD%E6%95%B0%E5%A4%A7%E5%85%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Levin lee">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Levin-lee">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/11/27/RDD%E5%87%BD%E6%95%B0%E5%A4%A7%E5%85%A8/" itemprop="url">RDD函数大全</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-11-27T14:20:45+08:00">
+                2021-11-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="map"><a href="#map" class="headerlink" title="map"></a>map</h2><blockquote>
+<p>是对 RDD 中的每个元素都执行一个指定的函数来产生一个新的 RDD。 任何 原 RDD 中的元素在新 RDD 中都有且只有一个元素与之对应。 举例： </p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">scala&gt;val a&#x3D;sc.parallelize(1to9,3) </span><br><span class="line">scala&gt;val b&#x3D;a.map(x&#x3D;&gt;x*2) </span><br><span class="line">scala&gt;a.collect res10:Array[Int]&#x3D;Array(1,2,3,4,5,6,7,8,9) </span><br><span class="line">scala&gt;b.collect res11:Array[Int]&#x3D;Array(2,4,6,8,10,12,14,16,18) </span><br><span class="line">&#x2F;&#x2F;上述例子中把原 RDD 中每个元素都乘以 2 来产生一个新的 RDD。</span><br></pre></td></tr></table></figure>
+<h2 id="filter"><a href="#filter" class="headerlink" title="filter"></a>filter</h2><blockquote>
+<p>filter 是对 RDD 中的每个元素都执行一个指定的函数来过滤产生一个新的 RDD。 任何原 RDD 中的元素在新 RDD 中都有且只有一个元素与之对应。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">val rdd&#x3D;sc.parallelize(List(1,2,3,4,5,6)) </span><br><span class="line">val filterRdd&#x3D;rdd.filter(_&gt;5) </span><br><span class="line">filterRdd.collect()&#x2F;&#x2F;返回所有大于 5 的数据的一个 Array， Array(6,8,10,12)</span><br></pre></td></tr></table></figure>
+<h2 id="flatMap"><a href="#flatMap" class="headerlink" title="flatMap"></a>flatMap</h2><blockquote>
+<p>与 map 类似，区别是原 RDD 中的元素经 map 处理后只能生成一个元素，而原 RDD 中的元素经 flatmap 处理后可生成多个元素来构建新 RDD。举例：对原 RDD 中的每个元素 x 产生 y 个元素（从 1 到 y，y 为元素 x 的值） </p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">scala&gt;vala&#x3D;sc.parallelize(1to4,2) scala&gt;valb&#x3D;a.flatMap(x&#x3D;&gt;1tox)</span><br><span class="line">scala&gt;b.collect res12:Array[Int]&#x3D;Array(1,1,2,1,2,3,1,2,3,4)</span><br></pre></td></tr></table></figure>
+<h2 id="mapPartitions"><a href="#mapPartitions" class="headerlink" title="mapPartitions"></a>mapPartitions</h2><blockquote>
+<p>mapPartitions 是 map 的一个变种。map 的输入函数是应用于 RDD 中每个元素， 而 mapPartitions 的输入函数是应用于每个分区，也就是把每个分区中的内容作 为整体来处理的。 它的函数定义为： def mapPartitions<a href="f: Iterator[T] =&gt; Iterator[U], preservesPartitioning: Boolean=false">U: ClassTag</a>:RDD[U] f 即为输入函数，它处理每个分区里面的内容。每个分区中的内容将以 Iterator[T] 传递给输入函数 f， f 的输出结果是 Iterator[U]。最终的 RDD 由所有分区经过输入 函数处理后的结果合并起来的。 举例：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">scala&gt;val a&#x3D;sc.parallelize(1to9,3) </span><br><span class="line">scala&gt;def myfuncT:Iterator[(T,T)]&#x3D;&#123; </span><br><span class="line">var res&#x3D;List(T,T) </span><br><span class="line">var pre&#x3D;iter.next </span><br><span class="line">while(iter.hasNext)&#123; </span><br><span class="line">	valcur&#x3D;iter.next </span><br><span class="line">	res.::&#x3D;(pre,cur) </span><br><span class="line">	pre&#x3D;cur &#125; res.iterator &#125; </span><br><span class="line">scala&gt;a.mapPartitions(myfunc).collect </span><br><span class="line">res0:Array[(Int,Int)]&#x3D;Array((2,3),(1,2),(5,6),(4,5),(8,9),(7,8))</span><br></pre></td></tr></table></figure>
+<p> 上述例子中的函数myfunc是把分区中一个元素和它的下一个元素组成一个Tuple。 因为分区中最后一个元素没有下一个元素了，所以(3,4)和(6,7)不在结果中。 mapPartitions 还有些变种，比如 mapPartitionsWithContext，它能把处理过程中的 一些状态信息传递给用户指定的输入函数。还有 mapPartitionsWithIndex，它能 把分区的 index传递给用户指定的输入函数。</p>
+<h2 id="mapPartitionsWithIndex"><a href="#mapPartitionsWithIndex" class="headerlink" title="mapPartitionsWithIndex"></a>mapPartitionsWithIndex</h2><p>def mapPartitionsWithIndex<a href="f: (Int, Iterator[T]">U</a> =&gt; Iterator[U], preservesPartitioning:Boolean=false)(implicitarg0:ClassTag[U]):RDD[U] 函数作用同 mapPartitions，不过提供了两个参数，第一个参数为分区的索引。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var rdd1&#x3D;sc.makeRDD(1to5,2) &#x2F;&#x2F;rdd1 有两个分区 </span><br><span class="line">var rdd2&#x3D;rdd1.mapPartitionsWithIndex&#123; </span><br><span class="line">(x,iter)&#x3D;&gt;&#123; varresult&#x3D;ListString </span><br><span class="line">var i&#x3D;0 </span><br><span class="line">while(iter.hasNext)&#123; i+&#x3D;iter.next() &#125; result.::(x+&quot;|&quot;+i).iterator</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>//rdd2 将 rdd1 中每个分区的数字累加，并在每个分区的累加结果前面加了分区 索引 scala&gt;rdd2.collect res13:Array[String]=Array(0|3,1|12)</p>
+<h2 id="mapWith"><a href="#mapWith" class="headerlink" title="mapWith"></a>mapWith</h2><blockquote>
+<p>mapWith 是 map 的另外一个变种，map 只需要一个输入函数，而 mapWith 有两 个输入函数。它的定义如下： def mapWith<a href="constructA: Int =&gt; A, preservesPartitioning: Boolean = false">A: ClassTag, U: </a>(f:(T,A)=&gt;U):RDD[U] 第一个函数 constructA 是把 RDD 的 partitionindex（index 从 0 开始）作为输入， 输出为新类型 A； 第二个函数 f 是把二元组(T,A)作为输入（其中 T 为原 RDD 中的元素，A 为第一个 函数的输出），输出类型为 U。 举例：把 partitionindex 乘以 10 加 2,作为新的 RDD 的元素。 </p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">val x&#x3D;sc.parallelize(List(1,2,3,4,5,6,7,8,9,10),3) </span><br><span class="line">x.mapWith(a&#x3D;&gt;a*10)((b,a)&#x3D;&gt;(b,a+2)).collect </span><br><span class="line">&#x2F;&#x2F; 结果： </span><br><span class="line">(1,2) (2,2) (3,2) (4,12)</span><br><span class="line">(5,12) (6,12) (7,22) (8,22) (9,22) (10,22)</span><br></pre></td></tr></table></figure>
+<h2 id="flatMapWith"><a href="#flatMapWith" class="headerlink" title="flatMapWith"></a>flatMapWith</h2><blockquote>
+<p>flatMapWith 与 mapWith 很类似，都是接收两个函数，一个函数把 partitionIndex 作为输入，输出是一个新类型 A；另外一个函数是以二元组（T,A）作为输入，输 出为一个序列，这些序列里面的元素组成了新的 RDD。它的定义如下：<br>def flatMapWith<a href="constructA:Int =&gt;A, preservesPartitioning: Boolean=false">A:ClassTag, U: ClassTag</a>(f:(T,A)=&gt;Seq[U]):RDD[U] 举例： </p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">scala&gt;vala&#x3D;sc.parallelize(List(1,2,3,4,5,6,7,8,9),3) </span><br><span class="line">scala&gt;a.flatMapWith(x&#x3D;&gt;x,true)((x,y)&#x3D;&gt;List(y,x)).collect </span><br><span class="line">res58:Array[Int]&#x3D;Array(0,1,0,2,0,3,1,4,1,5,1,6,2,7,2, 8,2,9)</span><br></pre></td></tr></table></figure>
+<h2 id="coalesce"><a href="#coalesce" class="headerlink" title="coalesce"></a>coalesce</h2><blockquote>
+<p>def coalesce(numPartitions: Int, shuffle: Boolean = false)(implicit ord: Ordering[T] = null):RDD[T] 该函数用于将 RDD 进行重分区，使用 HashPartitioner。 第一个参数为重分区的数目，第二个为是否进行 shuffle，默认为 false; 以下面的例子来看： </p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">scala&gt;var data&#x3D;sc.parallelize(1to12,3) </span><br><span class="line">scala&gt;data.collect </span><br><span class="line">scala&gt;data.partitions.size </span><br><span class="line">scala&gt;var rdd1&#x3D;data.coalesce(1) </span><br><span class="line">scala&gt;rdd1.partitions.size </span><br><span class="line">scala&gt;varrdd1&#x3D;data.coalesce(4) </span><br><span class="line">scala&gt;rdd1.partitions.size res2:Int&#x3D;1 </span><br><span class="line">&#x2F;&#x2F;如果重分区的数目大于原来的分区数，那么必须指定 shuffle 参 数为 true，&#x2F;&#x2F;否则，分区数不便 scala&gt;varrdd1&#x3D;data.coalesce(4,true) scala&gt;rdd1.partitions.size</span><br><span class="line">res3:Int&#x3D;4</span><br></pre></td></tr></table></figure>
+<h2 id="repartition"><a href="#repartition" class="headerlink" title="repartition"></a>repartition</h2><blockquote>
+<p>defrepartition(numPartitions:Int)(implicitord:Ordering[T]=null):RDD[T] 该函数其实就是 coalesce 函数第二个参数为 true 的实现<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">scala&gt;vardata&#x3D;sc.parallelize(1to12,3) </span><br><span class="line">scala&gt;data.collect scala&gt;data.partitions.size </span><br><span class="line">scala&gt;var rdd1&#x3D;data.repartition(1) </span><br><span class="line">scala&gt;rdd1.partitions.size </span><br><span class="line">scala&gt;varrdd1&#x3D;data.repartition(4) </span><br><span class="line">scala&gt;rdd1.partitions.size res3:Int&#x3D;4</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<h2 id="randomSplit"><a href="#randomSplit" class="headerlink" title="randomSplit"></a>randomSplit</h2><blockquote>
+<p>def randomSplit(weights: Array[Double], seed: Long = Utils.random.nextLong): Array[RDD[T]] 该函数根据 weights 权重，将一个 RDD 切分成多个 RDD。 该权重参数为一个 Double 数组 第二个参数为 random 的种子，基本可忽略。 </p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">scala&gt;rdd.collect res6:Array[Int]&#x3D;Array(1,2,3,4,5,6,7,8,9,10)</span><br><span class="line">scala&gt;varsplitRDD&#x3D;rdd.randomSplit(Array(0.5,0.1,0.2,0.2)) splitRDD: Array[org.apache.spark.rdd.RDD[Int]] &#x3D; Array(MapPartitionsRDD[17] at randomSplitat:23, MapPartitionsRDD[18]atrandomSplitat:23, MapPartitionsRDD[19]atrandomSplitat:23, MapPartitionsRDD[20]atrandomSplitat:23)</span><br><span class="line">&#x2F;&#x2F;这里注意：randomSplit 的结果是一个 RDD 数组</span><br><span class="line">scala&gt;splitRDD.size res8:Int&#x3D;4 &#x2F;&#x2F;由于 randomSplit 的第一个参数 weights 中传入的值有 4 个，因此，就会切分成 4 个 RDD, &#x2F;&#x2F;把原来的 rdd 按照权重 0.5,0.1,0.2,0.2，随机划分到这 4 个 RDD 中，权重高的 RDD，划分到&#x2F;&#x2F;的几率就大一些。 &#x2F;&#x2F;注意，权重的总和加起来为 1，否则会不正常 scala&gt;splitRDD(0).collect res10:Array[Int]&#x3D;Array(1,4)</span><br><span class="line">scala&gt;splitRDD(1).collect res11:Array[Int]&#x3D;Array(3)</span><br><span class="line">scala&gt;splitRDD(2).collect res12:Array[Int]&#x3D;Array(5,9)</span><br><span class="line">scala&gt;splitRDD(3).collect res13:Array[Int]&#x3D;Array(2,6,7,8,10)</span><br></pre></td></tr></table></figure>
+<h2 id="glom"><a href="#glom" class="headerlink" title="glom"></a>glom</h2><blockquote>
+<p>defglom():RDD[Array[T]] 该函数是将 RDD 中每一个分区中类型为 T 的元素转换成 Array[T]，这样每一个分 区就只有一个数组元素。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">scala&gt;var rdd&#x3D;sc.makeRDD(1to10,3) </span><br><span class="line">rdd:org.apache.spark.rdd.RDD[Int]&#x3D;ParallelCollectionRDD[38]atmakeRDDat:21 </span><br><span class="line">scala&gt;rdd.partitions.size res33:Int&#x3D;3 </span><br><span class="line">&#x2F;&#x2F;该 RDD 有 3 个分区 </span><br><span class="line">scala&gt;rdd.glom().collect </span><br><span class="line">res35:Array[Array[Int]]&#x3D;Array(Array(1,2,3),Array(4,5,6),Array(7,8,9,10)) &#x2F;&#x2F;glom 将每个分区中的元素放到一个数组中，这样，结果就变成了 3 个数组</span><br></pre></td></tr></table></figure>
+<h2 id="union-并集"><a href="#union-并集" class="headerlink" title="union 并集"></a>union 并集</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">val rdd1&#x3D;sc.parallelize(List(5,6,4,3)) </span><br><span class="line">val rdd2&#x3D;sc.parallelize(List(1,2,3,4)) &#x2F;&#x2F;求并集 </span><br><span class="line">val rdd3&#x3D;rdd1.union(rdd2) </span><br><span class="line">rdd3.collect</span><br></pre></td></tr></table></figure>
+<h2 id="distinct"><a href="#distinct" class="headerlink" title="distinct"></a>distinct</h2><blockquote>
+<p>去重 </p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">val rdd1&#x3D;sc.parallelize(List(5,6,4,3)) </span><br><span class="line">val rdd2&#x3D;sc.parallelize(List(1,2,3,4)) &#x2F;&#x2F;求并集 valrdd3&#x3D;rdd1.union(rdd2) &#x2F;&#x2F;去重输出 rdd3.distinct.collect</span><br></pre></td></tr></table></figure>
+<h2 id="intersection-交集"><a href="#intersection-交集" class="headerlink" title="intersection 交集"></a>intersection 交集</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">val rdd1&#x3D;sc.parallelize(List(5,6,4,3)) </span><br><span class="line">valrdd2&#x3D;sc.parallelize(List(1,2,3,4)) &#x2F;&#x2F;求交集 valrdd4&#x3D;rdd1.intersection(rdd2) rdd4.collect</span><br></pre></td></tr></table></figure>
+<h2 id="subtract"><a href="#subtract" class="headerlink" title="subtract"></a>subtract</h2><blockquote>
+<p>def subtract(other:RDD[T]):RDD[T] defsubtract(other:RDD[T],numPartitions:Int):RDD[T] def subtract(other: RDD[T], partitioner: Partitioner)(implicit ord: Ordering[T] = null): RDD[T] 该函数返回在 RDD 中出现，并且不在 otherRDD 中出现的元素，不去重。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">val rdd1&#x3D;sc.parallelize(List(5,6,6,4,3)) </span><br><span class="line">val rdd2&#x3D;sc.parallelize(List(1,2,3,4)) &#x2F;&#x2F;求差集 valrdd4&#x3D;rdd1.subtract(rdd2) rdd4.collect</span><br></pre></td></tr></table></figure>
+<h2 id="subtractByKey"><a href="#subtractByKey" class="headerlink" title="subtractByKey"></a>subtractByKey</h2><blockquote>
+<p>defsubtractByKeyW(implicitarg0:ClassTag[W]):RDD[(K,V)] def subtractByKey<a href="other: RDD[(K, W">W</a>], numPartitions: Int)(implicit arg0: ClassTag[W]):RDD[(K,V)] def subtractByKey<a href="other: RDD[(K, W">W</a>], p: Partitioner)(implicit arg0: ClassTag[W]): RDD[(K,V)]<br>subtractByKey 和基本转换操作中的 subtract 类似，只不过这里是针对 K 的，返回 在主 RDD 中出现，并且不在 otherRDD 中出现的元素。 参数 numPartitions 用于指定结果的分区数 参数 partitioner 用于指定分区函数</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var rdd1&#x3D;sc.makeRDD(Array((&quot;A&quot;,&quot;1&quot;),(&quot;B&quot;,&quot;2&quot;),(&quot;C&quot;,&quot;3&quot;)),2) </span><br><span class="line">var rdd2&#x3D;sc.makeRDD(Array((&quot;A&quot;,&quot;a&quot;),(&quot;C&quot;,&quot;c&quot;),(&quot;D&quot;,&quot;d&quot;)),2) </span><br><span class="line">scala&gt;rdd1.subtractByKey(rdd2).collect res13:Array[(String,String)]&#x3D;Array((B,2))</span><br></pre></td></tr></table></figure>
+<h2 id="groupbyKey"><a href="#groupbyKey" class="headerlink" title="groupbyKey"></a>groupbyKey</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">val rdd1&#x3D;sc.parallelize(List((&quot;tom&quot;,1),(&quot;jerry&quot;,3),(&quot;kitty&quot;,2))) </span><br><span class="line">val rdd2&#x3D;sc.parallelize(List((&quot;jerry&quot;,2),(&quot;tom&quot;,1),(&quot;shuke&quot;,2))) &#x2F;&#x2F;求并集 </span><br><span class="line">val rdd4&#x3D;rdd1.union(rdd2) &#x2F;&#x2F;按 key 进行分组 </span><br><span class="line">val rdd5&#x3D;rdd4.groupByKey </span><br><span class="line">rdd5.collect</span><br></pre></td></tr></table></figure>
+<h2 id="reduceByKey"><a href="#reduceByKey" class="headerlink" title="reduceByKey"></a>reduceByKey</h2><blockquote>
+<p>顾名思义，reduceByKey 就是对元素为 KV 对的 RDD 中 Key 相同的元素的 Value 进行 reduce，因此，Key 相同的多个元素的值被 reduce 为一个值，然后与原 RDD 中的 Key 组成一个新的 KV 对。 举例: </p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">valrdd1&#x3D;sc.parallelize(List((&quot;tom&quot;,1),(&quot;jerry&quot;,3),(&quot;kitty&quot;,2))) </span><br><span class="line">valrdd2&#x3D;sc.parallelize(List((&quot;jerry&quot;,2),(&quot;tom&quot;,1),(&quot;shuke&quot;,2))) &#x2F;&#x2F;求并集 </span><br><span class="line">val rdd4&#x3D;rdd1unionrdd2 &#x2F;&#x2F;按 key 进行分组 </span><br><span class="line">val rdd6&#x3D;rdd4.reduceByKey(+) rdd6.collect()</span><br></pre></td></tr></table></figure>
+<h2 id="sortByKey"><a href="#sortByKey" class="headerlink" title="sortByKey"></a>sortByKey</h2><blockquote>
+<p>将 List((“tom”,1),(“jerry”,3),(“kitty”,2), (“shuke”,1))和 List((“jerry”,2),(“tom”,3), (“shuke”,2),(“kitty”,5))做 wordcount，并按名称排序<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">val rdd1&#x3D;sc.parallelize(List((&quot;tom&quot;,1),(&quot;jerry&quot;,3),(&quot;kitty&quot;,2),(&quot;shuke&quot;,1))) </span><br><span class="line">val rdd2&#x3D;sc.parallelize(List((&quot;jerry&quot;,2),(&quot;tom&quot;,3),(&quot;shuke&quot;,2),(&quot;kitty&quot;,5))) </span><br><span class="line">val rdd3&#x3D;rdd1.union(rdd2) &#x2F;&#x2F;按 key 进行聚合 </span><br><span class="line">val rdd4&#x3D;rdd3.reduceByKey(+) &#x2F;&#x2F;false 降序 </span><br><span class="line">val rdd5&#x3D;rdd4.sortByKey(false) </span><br><span class="line">rdd5.collect</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<h2 id="sortBy"><a href="#sortBy" class="headerlink" title="sortBy"></a>sortBy</h2><blockquote>
+<p>将 List((“tom”,1),(“jerry”,3),(“kitty”,2), (“shuke”,1))和 List((“jerry”,2),(“tom”,3), (“shuke”,2),(“kitty”,5))做 wordcount，并按数值排序 </p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">val rdd1&#x3D;sc.parallelize(List((&quot;tom&quot;,1),(&quot;jerry&quot;,3),(&quot;kitty&quot;,2),(&quot;shuke&quot;,1))) </span><br><span class="line">valrdd2&#x3D;sc.parallelize(List((&quot;jerry&quot;,2),(&quot;tom&quot;,3),(&quot;shuke&quot;,2),(&quot;kitty&quot;,5))) </span><br><span class="line">val rdd3&#x3D;rdd1.union(rdd2) </span><br><span class="line">&#x2F;&#x2F;按 key 进行聚合 </span><br><span class="line">valrdd4&#x3D;rdd3.reduceByKey(+)</span><br><span class="line">&#x2F;&#x2F;false 降序 </span><br><span class="line">valrdd5&#x3D;rdd4.sortBy(_._2,false) rdd5.collect</span><br><span class="line"></span><br><span class="line">## zip</span><br><span class="line">&gt;def zipU(implicitarg0:ClassTag[U]):RDD[(T,U)]</span><br><span class="line">zip 函数用于将两个 RDD 组合成 Key&#x2F;Value 形式的 RDD,这里默认两个 RDD 的 partition 数量以及元素数量都相同，否则会抛出异常。</span><br></pre></td></tr></table></figure>
+<p>scala&gt;varrdd1=sc.makeRDD(1to5,2) rdd1:org.apache.spark.rdd.RDD[Int]=ParallelCollectionRDD[1]atmakeRDDat:21<br>scala&gt;varrdd2=sc.makeRDD(Seq(“A”,”B”,”C”,”D”,”E”),2) rdd2: org.apache.spark.rdd.RDD[String] = ParallelCollectionRDD[2] at makeRDD at:21<br>scala&gt;rdd1.zip(rdd2).collect res0:Array[(Int,String)]=Array((1,A),(2,B),(3,C),(4,D),(5,E))<br>scala&gt;rdd2.zip(rdd1).collect res1:Array[(String,Int)]=Array((A,1),(B,2),(C,3),(D,4),(E,5))<br>scala&gt;varrdd3=sc.makeRDD(Seq(“A”,”B”,”C”,”D”,”E”),3) rdd3: org.apache.spark.rdd.RDD[String] = ParallelCollectionRDD[5] at makeRDD at:21 scala&gt;rdd1.zip(rdd3).collect java.lang.IllegalArgumentException: Can’t zip RDDs with unequal numbers of partitions //如果两个 RDD 分区数不同，则抛出异常<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## zipPartitions</span><br><span class="line">&gt;zipPartitions 函数将多个 RDD 按照 partition 组合成为新的 RDD，该函数需要组合</span><br><span class="line">的 RDD 具有相同的分区数，但对于每个分区内的元素数量没有要求。 该函数有好几种实现，可分为三类：</span><br><span class="line">参数是一个 RDD</span><br></pre></td></tr></table></figure><br>def zipPartitions<a href="rdd2: RDD[B]">B, V</a>(f: (Iterator[T], Iterator[B]) =&gt; Iterator[V])(implicit arg0: ClassTag[B],arg1:ClassTag[V]):RDD[V]<br>def zipPartitions<a href="rdd2: RDD[B], preservesPartitioning: Boolean">B, V</a>(f: (Iterator[T], Iterator[B]) =&gt; Iterator[V])(implicitarg0:ClassTag[B],arg1:ClassTag[V]):RDD[V]<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">这两个区别就是参数 preservesPartitioning，是否保留父 RDD 的 partitioner 分区信息</span><br><span class="line">映射方法 f 参数为两个 RDD 的迭代器。</span><br></pre></td></tr></table></figure><br>scala&gt;varrdd1=sc.makeRDD(1to5,2) rdd1:org.apache.spark.rdd.RDD[Int]=ParallelCollectionRDD[22]atmakeRDDat:21<br>scala&gt;varrdd2=sc.makeRDD(Seq(“A”,”B”,”C”,”D”,”E”),2) rdd2:org.apache.spark.rdd.RDD[String]=ParallelCollectionRDD[23]atmakeRDDat:21<br>//rdd1 两个分区中元素分布： scala&gt;rdd1.mapPartitionsWithIndex{ | (x,iter)=&gt;{ | varresult=ListString | while(iter.hasNext){ | result::=(“part<em>“+x+”|”+iter.next()) | } | result.iterator | | } | }.collect res17:Array[String]=Array(part_0|2,part_0|1,part_1|5,part_1|4,part_1|3)<br>//rdd2 两个分区中元素分布 scala&gt;rdd2.mapPartitionsWithIndex{ | (x,iter)=&gt;{<br>| varresult=ListString | while(iter.hasNext){ | result::=(“part</em>“+x+”|”+iter.next()) | } | result.iterator | | } | }.collect res18:Array[String]=Array(part<em>0|B,part_0|A,part_1|E,part_1|D,part_1|C)<br>//rdd1 和 rdd2 做 zipPartition scala&gt;rdd1.zipPartitions(rdd2){ | (rdd1Iter,rdd2Iter)=&gt;{ | varresult=ListString | while(rdd1Iter.hasNext&amp;&amp;rdd2Iter.hasNext){ | result::=(rdd1Iter.next()+””+rdd2Iter.next()) | } | result.iterator | } | }.collect res19:Array[String]=Array(2_B,1_A,5_E,4_D,3_C)<br>参数是两个 RDD<br>def zipPartitions<a href="rdd2: RDD[B], rdd3: RDD[C]">B, C, V</a>(f: (Iterator[T], Iterator[B], Iterator[C]) =&gt; Iterator[V])(implicitarg0:ClassTag[B],arg1:ClassTag[C],arg2:ClassTag[V]):RDD[V]<br>def zipPartitions<a href="rdd2: RDD[B], rdd3: RDD[C], preservesPartitioning: Boolean">B, C, V</a>(f: (Iterator[T], Iterator[B], Iterator[C]) =&gt; Iterator[V])(implicit arg0: ClassTag[B], arg1: ClassTag[C], arg2:ClassTag[V]):RDD[V]<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">用法同上面，只不过该函数参数为两个 RDD，映射方法 f 输入参数为两个 RDD 的迭代器。</span><br></pre></td></tr></table></figure><br>scala&gt;varrdd1=sc.makeRDD(1to5,2) rdd1:org.apache.spark.rdd.RDD[Int]=ParallelCollectionRDD[27]atmakeRDDat:21<br>scala&gt;varrdd2=sc.makeRDD(Seq(“A”,”B”,”C”,”D”,”E”),2) rdd2:org.apache.spark.rdd.RDD[String]=ParallelCollectionRDD[28]atmakeRDDat:21<br>scala&gt;varrdd3=sc.makeRDD(Seq(“a”,”b”,”c”,”d”,”e”),2) rdd3:org.apache.spark.rdd.RDD[String]=ParallelCollectionRDD[29]atmakeRDDat:21<br>//rdd3 中个分区元素分布 scala&gt;rdd3.mapPartitionsWithIndex{ | (x,iter)=&gt;{ | varresult=ListString | while(iter.hasNext){ | result::=(“part”+x+”|”+iter.next()) | } | result.iterator | | } | }.collect res21:Array[String]=Array(part_0|b,part_0|a,part_1|e,part_1|d,part_1|c)<br>//三个 RDD 做 zipPartitions scala&gt;varrdd4=rdd1.zipPartitions(rdd2,rdd3){ | (rdd1Iter,rdd2Iter,rdd3Iter)=&gt;{ | varresult=ListString | while(rdd1Iter.hasNext&amp;&amp;rdd2Iter.hasNext&amp;&amp;rdd3Iter.hasNext){ | result::=(rdd1Iter.next()+””+rdd2Iter.next()+””+rdd3Iter.next()) | } | result.iterator | } | } rdd4:org.apache.spark.rdd.RDD[String]=ZippedPartitionsRDD3[33]atzipPartitionsat:27<br>scala&gt;rdd4.collect res23:Array[String]=Array(2_B_b,1_A_a,5_E_e,4_D_d,3_C_c)<br>参数是三个 RDD<br>def zipPartitions<a href="rdd2: RDD[B], rdd3: RDD[C], rdd4: RDD[D]">B, C, D, V</a>(f: (Iterator[T], Iterator[B],<br>Iterator[C], Iterator[D]) =&gt; Iterator[V])(implicit arg0: ClassTag[B], arg1: ClassTag[C], arg2: ClassTag[D],arg3:ClassTag[V]):RDD[V]<br>def zipPartitions<a href="rdd2: RDD[B], rdd3: RDD[C], rdd4: RDD[D], preservesPartitioning: Boolean">B, C, D, V</a>(f: (Iterator[T], Iterator[B], Iterator[C], Iterator[D]) =&gt; Iterator[V])(implicit arg0: ClassTag[B],arg1:ClassTag[C],arg2:ClassTag[D],arg3:ClassTag[V]):RDD[V]<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">用法同上面，只不过这里又多了个一个 RDD 而已。</span><br><span class="line"></span><br><span class="line">## zipWithIndex</span><br><span class="line">&gt;defzipWithIndex():RDD[(T,Long)] 该函数将 RDD 中的元素和这个元素在 RDD 中的 ID（索引号）组合成键&#x2F;值对。</span><br></pre></td></tr></table></figure><br>scala&gt;var rdd2=sc.makeRDD(Seq(“A”,”B”,”R”,”D”,”F”),2)<br>rdd2: org.apache.spark.rdd.RDD[String] = ParallelCollectionRDD[34] at makeRDD at:21<br>scala&gt;rdd2.zipWithIndex().collect res27:Array[(String,Long)]=Array((A,0),(B,1),(R,2),(D,3),(F,4))<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">##  zipWithUniqueId</span><br><span class="line">&gt;def zipWithUniqueId():RDD[(T,Long)] 该函数将 RDD 中元素和一个唯一 ID 组合成键&#x2F;值对，该唯一 ID 生成算法如下： 每个分区中第一个元素的唯一 ID 值为：该分区索引号， 每个分区中第 N 个元素的唯一 ID 值为： (前一个元素的唯一 ID 值)+(该 RDD 总的 分区数) 看下面的例子： scala&gt;varrdd1&#x3D;sc.makeRDD(Seq(&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;D&quot;,&quot;E&quot;,&quot;F&quot;),2) rdd1: org.apache.spark.rdd.RDD[String] &#x3D; ParallelCollectionRDD[44] at makeRDD at:21 &#x2F;&#x2F;rdd1 有两个分区， scala&gt;rdd1.zipWithUniqueId().collect res32:Array[(String,Long)]&#x3D;Array((A,0),(B,2),(C,4),(D,1),(E,3),(F,5))</span><br><span class="line">&#x2F;&#x2F;总分区数为 2 &#x2F;&#x2F;第一个分区第一个元素 ID 为 0，第二个分区第一个元素 ID 为 1 &#x2F;&#x2F;第一个分区第二个元素 ID 为 0+2&#x3D;2，第一个分区第三个元素 ID 为 2+2&#x3D;4 &#x2F;&#x2F;第二个分区第二个元素 ID 为 1+2&#x3D;3，第二个分区第三个元素 ID 为 3+2&#x3D;5</span><br><span class="line">键值转换</span><br><span class="line"></span><br><span class="line">## partitionBy</span><br><span class="line">&gt;def partitionBy(partitioner:Partitioner):RDD[(K,V)] 该函数根据 partitioner 函数生成新的 ShuffleRDD，将原 RDD 重新分区。 scala&gt;varrdd1&#x3D;sc.makeRDD(Array((1,&quot;A&quot;),(2,&quot;B&quot;),(3,&quot;C&quot;),(4,&quot;D&quot;)),2) rdd1:org.apache.spark.rdd.RDD[(Int,String)]&#x3D;ParallelCollectionRDD[23]atmakeRDDat:21 scala&gt;rdd1.partitions.size res20:Int&#x3D;2</span><br></pre></td></tr></table></figure><br>//查看 rdd1 中每个分区的元素<br>scala&gt;rdd1.mapPartitionsWithIndex{ | (partIdx,iter)=&gt;{ | varpart_map=scala.collection.mutable.MapString,List[(Int,String)] | while(iter.hasNext){ | varpart_name=”part</em>“+partIdx; | varelem=iter.next() | if(part<em>map.contains(part_name)){ | varelems=part_map(part_name) | elems::=elem | part_map(part_name)=elems | }else{ | part_map(part_name)=List[(Int,String)]{elem} | } | } | part_map.iterator | | } | }.collect res22:Array[(String,List[(Int,String)])]=Array((part_0,List((2,B),(1,A))),(part_1,List((4,D),(3,C))))<br>//(2,B),(1,A)在 part_0 中，(4,D),(3,C)在 part_1 中<br>//使用 partitionBy 重分区<br>scala&gt;varrdd2=rdd1.partitionBy(neworg.apache.spark.HashPartitioner(2)) rdd2:org.apache.spark.rdd.RDD[(Int,String)]=ShuffledRDD[25]atpartitionByat:23<br>scala&gt;rdd2.partitions.size res23:Int=2<br>//查看 rdd2 中每个分区的元素<br>scala&gt;rdd2.mapPartitionsWithIndex{ | (partIdx,iter)=&gt;{ | varpart_map=scala.collection.mutable.MapString,List[(Int,String)] | while(iter.hasNext){ | varpart_name=”part</em>“+partIdx; | varelem=iter.next() | if(part<em>map.contains(part_name)){ | varelems=part_map(part_name) | elems::=elem | part_map(part_name)=elems | }else{ | part_map(part_name)=List[(Int,String)]{elem} | } | } | part_map.iterator | } | }.collect res24:Array[(String,List[(Int,String)])]=Array((part_0,List((4,D),(2,B))),(part_1,List((3,C),(1,A)))) //(4,D),(2,B)在 part_0 中，(3,C),(1,A)在 part_1 中<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">##  mapValues</span><br><span class="line">&gt;mapValues 顾名思义就是输入函数应用于 RDD 中 Kev-Value 的 Value，原 RDD 中的 Key 保持 不变，与新的 Value 一起组成新的 RDD 中的元素。因此，该函数只适用于元素为 KV 对的 RDD。 举例：</span><br></pre></td></tr></table></figure><br>scala&gt;vala=sc.parallelize(List(“dog”,”tiger”,”lion”,”cat”,”panther”,”eagle”),2)<br>scala&gt;valb=a.map(x=&gt;(x.length,x))<br>scala&gt;b.mapValues(“x”+</em>+”x”).collect<br>res5: Array[(Int, String)] = Array((3,xdogx), (5,xtigerx), (4,xlionx),(3,xcatx), (7,xpantherx), (5,xeaglex))<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">##  flatMapValues</span><br><span class="line">&gt;flatMapValues 类似于 mapValues，不同的在于 flatMapValues 应用于元素为 KV 对的 RDD 中 Value。每个一元素的 Value 被输入函数映射为一系列的值，然后这些值再与原 RDD 中的 Key 组成一系列新的 KV 对。 举例 vala&#x3D;sc.parallelize(List((1,2),(3,4),(5,6))) valb&#x3D;a.flatMapValues(x&#x3D;&gt;1.to(x)) b.collect.foreach(println)</span><br><span class="line"></span><br><span class="line">## combineByKey</span><br><span class="line">&gt;def combineByKey[C](createCombiner: (V) &#x3D;&gt; C, mergeValue: (C, V) &#x3D;&gt; C, mergeCombiners: (C, C) &#x3D;&gt;C):RDD[(K,C)] def combineByKey[C](createCombiner: (V) &#x3D;&gt; C, mergeValue: (C, V) &#x3D;&gt; C, mergeCombiners: (C, C) &#x3D;&gt;C,numPartitions:Int):RDD[(K,C)] def combineByKey[C](createCombiner: (V) &#x3D;&gt; C, mergeValue: (C, V) &#x3D;&gt; C, mergeCombiners: (C, C) &#x3D;&gt; C, partitioner: Partitioner, mapSideCombine: Boolean &#x3D; true, serializer: Serializer &#x3D; null): RDD[(K,C)] 该函数用于将 RDD[K,V]转换成 RDD[K,C],这里的 V 类型和 C 类型可以相同也可以不同。 其中的参数： createCombiner：组合器函数，用于将 V 类型转换成 C 类型，输入参数为 RDD[K,V]中的 V,输 出为 C,分区内相同的 key 做一次 mergeValue：合并值函数，将一个C类型和一个V类型值合并成一个C类型， 输入参数为(C,V)， 输出为 C，分区内相同的 key 循环做 mergeCombiners：分区合并组合器函数，用于将两个 C 类型值合并成一个 C 类型，输入参数 为(C,C)，输出为 C，分区之间循环做 numPartitions：结果 RDD 分区数，默认保持原有的分区数 partitioner：分区函数,默认为 HashPartitioner mapSideCombine：是否需要在 Map 端进行 combine 操作，类似于 MapReduce 中的 combine， 默认为 true</span><br><span class="line">看下面例子：</span><br></pre></td></tr></table></figure><br>scala&gt;var rdd1=sc.makeRDD(Array((“A”,1),(“A”,2),(“B”,1),(“B”,2),(“C”,1)))<br>rdd1:org.apache.spark.rdd.RDD[(String,Int)]=ParallelCollectionRDD[64]atmakeRDDat:21<br>scala&gt;rdd1.combineByKey( | (v:Int)=&gt;v+””, | (c:String,v:Int)=&gt;c+”@”+v, | (c1:String,c2:String)=&gt;c1+”1),(B,1<em>” +c2//合并 C 类型和 C 类型，中间加$，返回 C(String) 其他参数为默认值。 最终，将 RDD[String,Int]转换为 RDD[String,String]。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">再看例子：</span><br></pre></td></tr></table></figure><br>rdd1.combineByKey( (v:Int)=&gt;List(v), (c:List[Int],v:Int)=&gt;v::c, (c1:List[Int],c2:List[Int])=&gt;c1:::c2 ).collect<br>res65:Array[(String,List[Int])]=Array((A,List(2,1)),(B,List(2,1)),(C,List(1))) 最终将 RDD[String,Int]转换为 RDD[String,List[Int]]。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## foldByKey</span><br></pre></td></tr></table></figure><br>deffoldByKey(zeroValue:V)(func:(V,V)=&gt;V):RDD[(K,V)]<br>deffoldByKey(zeroValue:V,numPartitions:Int)(func:(V,V)=&gt;V):RDD[(K,V)]<br>deffoldByKey(zeroValue:V,partitioner:Partitioner)(func:(V,V)=&gt;V):RDD[(K,V)]<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">该函数用于 RDD[K,V]根据 K 将 V 做折叠、合并处理，其中的参数 zeroValue 表示先根据映射 函数将 zeroValue 应用于 V,进行初始化 V,再将映射函数应用于初始化后的 V.</span><br><span class="line">例子：</span><br></pre></td></tr></table></figure><br>scala&gt;varrdd1=sc.makeRDD(Array((“A”,0),(“A”,2),(“B”,1),(“B”,2),(“C”,1))) scala&gt;rdd1.foldByKey(0)(+).collect res75:Array[(String,Int)]=Array((A,2),(B,3),(C,1)) //将 rdd1 中每个 key 对应的 V 进行累加，注意 zeroValue=0,需要先初始化 V,映射函数为+操 //作，比如(“A”,0),(“A”,2)，先将 zeroValue 应用于每个 V,得到：(“A”,0+0),(“A”,2+0)，即： //(“A”,0),(“A”,2)，再将映射函数应用于初始化后的 V，最后得到(A,0+2),即(A,2)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">再看：</span><br></pre></td></tr></table></figure><br>scala&gt;rdd1.foldByKey(2)(+).collect res76:Array[(String,Int)]=Array((A,6),(B,7),(C,3)) //先将 zeroValue=2 应用于每个 V,得到：(“A”,0+2), (“A”,2+2)，即：(“A”,2), (“A”,4)，再将映射 函 //数应用于初始化后的 V，最后得到：(A,2+4)，即：(A,6)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">再看乘法操作：</span><br></pre></td></tr></table></figure><br>scala&gt;rdd1.foldByKey(0)(*).collect res77:Array[(String,Int)]=Array((A,0),(B,0),(C,0)) //先将 zeroValue=0 应用于每个 V,注意，这次映射函数为乘法，得到：(“A”,00),(“A”,20)， //即：(“A”,0),(“A”,0)，再将映射函//数应用于初始化后的 V，最后得到：(A,00)，即：(A,0) //其他 K 也一样，最终都得到了 V=0<br>scala&gt;rdd1.foldByKey(1)(_</em>).collect res78:Array[(String,Int)]=Array((A,0),(B,2),(C,1)) //映射函数为乘法时，需要将 zeroValue 设为 1，才能得到我们想要的结果。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">在使用 foldByKey 算子时候，要特别注意映射函数及 zeroValue 的取值。</span><br><span class="line"></span><br><span class="line">## reduceByKeyLocally</span><br><span class="line">&gt;defreduceByKeyLocally(func:(V,V)&#x3D;&gt;V):Map[K,V]</span><br><span class="line">该函数将 RDD[K,V]中每个 K 对应的 V 值根据映射函数来运算，运算结果映射到一个 Map[K,V] 中，而不是 RDD[K,V]。</span><br></pre></td></tr></table></figure><br>scala&gt;var rdd1=sc.makeRDD(Array((“A”,0),(“A”,2),(“B”,1),(“B”,2),(“C”,1)))<br>rdd1:org.apache.spark.rdd.RDD[(String,Int)]=ParallelCollectionRDD[91]atmakeRDDat:21<br>scala&gt;rdd1.reduceByKeyLocally((x,y)=&gt;x+y)<br>res90:scala.collection.Map[String,Int]=Map(B-&gt;3,A-&gt;2,C-&gt;1)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## sample</span><br><span class="line">&gt;sample(withReplacement, fraction, seed):以指定的随机种子随机抽样出数量为fraction的数据，withReplacement表示是抽出的数据是否放回，true为有放回的抽样，false为无放回的抽样，seed用于指定随机数生成器种子。例子从RDD中随机且有放回的抽出50%的数据，随机种子值为3（即可能以1 2 3的其中一个起始值）</span><br></pre></td></tr></table></figure><br>Val red = sc.makeRDD(1 to 10)<br>Val sample = rdd.sample(true,0.4,.2)<br>``</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://levin-lee.github.io/2021/06/19/spark-%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Levin lee">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Levin-lee">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/06/19/spark-%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92/" itemprop="url">spark-逻辑回归</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-06-19T21:26:50+08:00">
+                2021-06-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>代码实例<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">import org.apache.log4j.&#123; Level, Logger &#125;</span><br><span class="line">import org.apache.spark.&#123; SparkConf, SparkContext &#125;</span><br><span class="line">import org.apache.spark.mllib.regression.LinearRegressionWithSGD</span><br><span class="line">import org.apache.spark.mllib.util.MLUtils</span><br><span class="line">import org.apache.spark.mllib.regression.LabeledPoint</span><br><span class="line">import org.apache.spark.mllib.linalg.Vectors</span><br><span class="line">import org.apache.spark.mllib.regression.LinearRegressionModel</span><br><span class="line"></span><br><span class="line">object LinearRegression &#123;</span><br><span class="line">  def main(args: Array[String]): Unit &#x3D; &#123;</span><br><span class="line">    &#x2F;&#x2F;  构建对象</span><br><span class="line">    val conf &#x3D; new SparkConf().setAppName(&quot;LinearRegressionWithSGD&quot;)</span><br><span class="line">    val sc &#x3D; new SparkContext(conf)</span><br><span class="line">    Logger.getRootLogger.setLevel(Level.WARN)</span><br><span class="line">    &#x2F;&#x2F; 读取样本数据（1）</span><br><span class="line">      val data_path1 &#x3D; &quot;&#x2F;Users&#x2F;lelingshan&#x2F;Downloads&#x2F;pandown&#x2F;MLlib机器学习&#x2F;数据&#x2F;lpsa.data&quot;</span><br><span class="line">      val data &#x3D; sc.textFile(data_path1)</span><br><span class="line">      val examples &#x3D; data.map&#123;line &#x3D;&gt;</span><br><span class="line">        val parts &#x3D; line.split(&#39;,&#39;)</span><br><span class="line">        LabeledPoint(parts(0).toDouble, Vectors.dense(parts(1).split(&#39; &#39;).map(_.toDouble)))</span><br><span class="line">      &#125;.cache()</span><br><span class="line">      val numExample &#x3D; examples.count()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; 读取样本数据（1）</span><br><span class="line">&#x2F;&#x2F;    val data_path2 &#x3D; &quot;&#x2F;Users&#x2F;lelingshan&#x2F;Downloads&#x2F;pandown&#x2F;MLlib机器学习&#x2F;数据&#x2F;lpsa.data&quot;</span><br><span class="line">&#x2F;&#x2F;    val examples &#x3D; MLUtils.loadLibSVMFile(sc,data_path2).cache()</span><br><span class="line">&#x2F;&#x2F;    val numExample &#x3D; examples.count()</span><br><span class="line">    &#x2F;&#x2F; 新建线性回归模型，并设置参数</span><br><span class="line">    val numIterations &#x3D; 100</span><br><span class="line">    val stepSize &#x3D; 1</span><br><span class="line">    val miniBatchFraction &#x3D; 1.0</span><br><span class="line">    val model &#x3D; LinearRegressionWithSGD.train(examples,numIterations,stepSize,miniBatchFraction)</span><br><span class="line">    &#x2F;&#x2F; 对样本进行预测</span><br><span class="line">    val prediction &#x3D; model.predict(examples.map(_.features))</span><br><span class="line">    val predictionAndLabel &#x3D; prediction.zip(examples.map(_.label))</span><br><span class="line">    val print_predict &#x3D; predictionAndLabel.take(50)</span><br><span class="line">    println(&quot;prediction&quot;+&quot;\t&quot;+&quot;label&quot;)</span><br><span class="line">    for(i &lt;- 0 to print_predict.length-1)&#123;</span><br><span class="line">      println(print_predict(i)._1+&quot;\t&quot;+print_predict(i)._2)</span><br><span class="line">    &#125;</span><br><span class="line">    &#x2F;&#x2F; 进行测试误差</span><br><span class="line">    val loss &#x3D; predictionAndLabel.map&#123;</span><br><span class="line">        case(v,p) &#x3D;&gt; math.pow((v-p),2)&#125;.mean()</span><br><span class="line">    println(s&quot;Test RMSE &#x3D; $loss.&quot;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; 模型保存</span><br><span class="line">&#x2F;&#x2F;    val ModelPath &#x3D; &quot;&#x2F;User&#x2F;Downloads&#x2F;pandown&#x2F;MLlib机器学习&#x2F;&quot;</span><br><span class="line">&#x2F;&#x2F;    model.save(sc,ModelPath)</span><br><span class="line">&#x2F;&#x2F;    val sameModel &#x3D; LinearRegressionModel.load(sc,ModelPath)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;-</span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://levin-lee.github.io/2021/06/19/spark-%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Levin lee">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Levin-lee">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/06/19/spark-%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/" itemprop="url">spark-线性回归</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-06-19T21:24:24+08:00">
+                2021-06-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>代码实例<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line">import org.apache.hadoop.util.XMLUtils</span><br><span class="line">import org.apache.log4j.&#123;Level, Logger&#125;</span><br><span class="line">import org.apache.spark.ml.classification.LogisticRegressionModel</span><br><span class="line">import org.apache.spark.mllib.classification.LogisticRegressionWithLBFGS</span><br><span class="line">import org.apache.spark.mllib.evaluation.MulticlassMetrics</span><br><span class="line">import org.apache.spark.mllib.util.MLUtils</span><br><span class="line">import org.apache.spark.&#123;SparkConf, SparkContext&#125;</span><br><span class="line">import org.apache.spark.mllib.regression.LabeledPoint</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">object LogisticRegression &#123;</span><br><span class="line">  def main(args: Array[String]): Unit &#x3D; &#123;</span><br><span class="line">    &#x2F;&#x2F;1 构建对象</span><br><span class="line">    val conf &#x3D; new SparkConf().setAppName(&quot;LogisticRegression&quot;)</span><br><span class="line">    val sc &#x3D; new SparkContext(conf)</span><br><span class="line">    Logger.getRootLogger.setLevel(Level.WARN)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F;2 读取样本数据，为libsvm格式</span><br><span class="line">    val  data &#x3D; MLUtils.loadLibSVMFile(sc,&quot;&#x2F;Users&#x2F;lelingshan&#x2F;Downloads&#x2F;pandown&#x2F;MLlib机器学习&#x2F;数据&#x2F;sample_libsvm_data.txt&quot;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F;3 处理样本数据</span><br><span class="line">    val splits &#x3D; data.randomSplit(Array(0.6,0.4),seed&#x3D;11L)</span><br><span class="line">    val training &#x3D; splits(0).cache()</span><br><span class="line">    val test &#x3D; splits(1)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; 4 新建逻辑回归模型，并训练</span><br><span class="line">    val model &#x3D; new LogisticRegressionWithLBFGS().setNumClasses(10).run(training)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; 5 对测试样本进行测试</span><br><span class="line">    val predictionAndLabels &#x3D; test.map&#123;</span><br><span class="line">      case LabeledPoint(label, features) &#x3D;&gt;</span><br><span class="line">        val prediction &#x3D; model.predict(features)</span><br><span class="line">        (prediction,label)</span><br><span class="line">    &#125;</span><br><span class="line">    val print_predict &#x3D; predictionAndLabels.take(20)</span><br><span class="line">    println(&quot;prediction&quot; + &quot;\t&quot; + &quot;label&quot;)</span><br><span class="line">    for (i &lt;- 0 to print_predict.length - 1)&#123;</span><br><span class="line">      println(print_predict(i)._1+&quot;\t&quot;+print_predict(i)._2)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; 6 计算误差</span><br><span class="line">    val metrics &#x3D; new MulticlassMetrics(predictionAndLabels)</span><br><span class="line">    val precision &#x3D; metrics.precision</span><br><span class="line">    println(&quot;Precision &#x3D; &quot; + precision)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;    &#x2F;&#x2F; 7保存模型</span><br><span class="line">&#x2F;&#x2F;    val ModelPath &#x3D; &quot;&quot;</span><br><span class="line">&#x2F;&#x2F;    model.save(sc,ModelPath)</span><br><span class="line">&#x2F;&#x2F;    val sameModel &#x3D; LogisticRegressionModel.load(sc,ModelPath)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://levin-lee.github.io/2021/05/29/%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BC%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Levin lee">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Levin-lee">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/05/29/%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BC%B0/" itemprop="url">模型评估</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-05-29T11:56:18+08:00">
+                2021-05-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>模型评估是验证模型准确率最重要的一步，常用的模型评估指标有AUC、ROC、精准率、召回率、KS、lift、模型稳定性PSI等。此外还可以利用F检验来验证模型是否显著的统计性假设检验。<br><strong> 1、ROC（接受者操作曲线）</strong><br><strong> 2、AUC </strong><br>AUC的物理意义伟ROC曲线下的面积，一般情况下AUC越大，表示的模型的效果越好。AUC主要由两部分所影响。</p>
+<ul>
+<li>精准率</li>
+<li>召回率</li>
+</ul>
+<p><strong> 3、KS </strong><br>KS金融模型评估领域中运用十分广泛，尤其在信贷行业，它可以验证模型区分好人坏人的能力，KS<br>计算公式为：ks = max(Cum.Bi/Bad_total - Cum.Gi/Good_total)<br>计算KS的代码如下：<br>法一：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">from scipy.stats import ks_2samp</span><br><span class="line"> </span><br><span class="line">get_ks &#x3D; lambda y_pred,y_true: ks_2samp(y_pred[y_true&#x3D;&#x3D;1], y_pred[y_true!&#x3D;1]).statistic</span><br><span class="line"> </span><br><span class="line">get_ks(x,y)</span><br></pre></td></tr></table></figure></p>
+<p>法二：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">Import pandas as pd</span><br><span class="line">Import numpy as np</span><br><span class="line">From sklearn.metrics import roc_curve</span><br><span class="line">From spicy.stats import ks_2samp</span><br><span class="line"></span><br><span class="line">def ks_calc_cross(data,pred,y_label):</span><br><span class="line">    &#39;&#39;&#39;</span><br><span class="line">    功能: 计算KS值，输出对应分割点和累计分布函数曲线图</span><br><span class="line">    输入值:</span><br><span class="line">    data: 二维数组或dataframe，包括模型得分和真实的标签</span><br><span class="line">    pred: 一维数组或series，代表模型得分（一般为预测正类的概率）,已经分成10个区间分数</span><br><span class="line">    y_label: 一维数组或series，代表真实的标签（&#123;0,1&#125;或&#123;-1,1&#125;）</span><br><span class="line">    输出值:</span><br><span class="line">    &#39;ks&#39;: KS值，&#39;crossdens&#39;: 好坏客户累积概率分布以及其差值gap</span><br><span class="line">    &#39;&#39;&#39;</span><br><span class="line">    crossfreq &#x3D; pd.crosstab(data[pred[0]],data[y_label[0]])</span><br><span class="line">    crossdens &#x3D; crossfreq.cumsum(axis&#x3D;0) &#x2F; crossfreq.sum()</span><br><span class="line">    crossdens[&#39;gap&#39;] &#x3D; abs(crossdens[0] - crossdens[1])</span><br><span class="line">    ks &#x3D; crossdens[&#39;gap&#39;].max()</span><br><span class="line">    </span><br><span class="line">    return ks,crossdens</span><br></pre></td></tr></table></figure></p>
+<p><strong> 4、模型稳定性PSI </strong><br>稳定性指标(populations stability index,PSI)可衡量测试样本及模型开发样本评分的分布差异。PSI表示按分数分档后，针对不同时间样本，population分布是否有变化，就是看各个分数区间内人数占总人数占比是否有显著变化。<br>计算公式为：PSI = sum[(Ac - Ex)*LN(Ac/Ex)]，其中Ac：表示分数区间实际的比例，Ex：表示分数区间预期的比例，也可以是之前模型分数区间的比例。<br>小于10%，无需更新模型；<br>10%-25%：检查一下其他度量方式<br>大于25%：需要更新模型</p>
+<p><strong> 5、lift </strong><br>lift也是一种评估模型或者单个强变量是否区分好人坏人有效性的指标，与IV类似，做法是将模型分或者变量切割成几个区间，分别计算各个区间内的放款逾期率和金额逾期率，将各个区间的逾期率除于大盘的逾期率，就可以得到lift，我们俗称梯度。如果lift呈递增或者递减，我们就可以说模型是有效的，lift增长或者下降越快，则模型区分好人和坏人的效果越好。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://levin-lee.github.io/2021/02/01/2020%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Levin lee">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Levin-lee">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/02/01/2020%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/" itemprop="url">2020年终总结</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-02-01T11:48:49+08:00">
+                2021-02-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>2020年临近尾声，我也不能免俗，感觉是时候对自己这一年发个总结，不管是好是坏，也是我经历的人<br>生呀：<br>这一年发生了很多事情，现在想想都感觉很梦幻。</p>
+<ul>
+<li>1.家属患了淋巴瘤，目前还在化疗中;</li>
+<li>2.从北漂转变为深漂，换了工作和地点，不变的是独孤的心;</li>
+<li>3.交了女朋友，然后迅速就分了;</li>
+<li>4.贯穿全年的新冠疫情;</li>
+<li>5.股市</li>
+</ul>
+<p>当我知道听我爸说去医院看病的时候，起初我还不以为意，只道是平常的肿大，看看病吃吃药，修养几天就好，但万万没想到化验结果让我傻眼，竟然是淋巴瘤，顿时晴天霹雳，惆怅不已，根本没想到我爸还会得病，他身体那么好，怎么就突然得了淋巴瘤了呢。后来他自己透露，每天干活接触很多刺鼻性化学物质。我一直认为中国的农民是很傻的一群人，只知道拼命干最苦最累最脏的活赚钱，莫不知，当你身体被折磨到累倒后，你赚的钱远远无法满足治疗费用，这就是一笔不能做的买卖，但大多人永远也想不到这一点。化疗是个很痛苦的过程，全身插满管子，6次疗程，治疗费用高昂，而我却无能为力，治愈率也不清楚，还是自己太无能，什么忙也帮不上。</p>
+<p>20年，我换了城市，换了工作。好像一起都往更好的方向发展，欣欣向荣。但只有自己知道，一切其实也没有改变，只是把身份从北漂改成了深漂，一样的漂泊居无定所，一样的孤独感。在大城市没有一套属于自己的房子，太辛苦了。</p>
+<p>从北京到深圳，很大原因是因为前女友过来的，不过挺感谢她让我成长，让我学会如何很好地区恋爱，如何保持一个比较良好的沟通，给彼此独立的空间。</p>
+<p>财富自由一直是我毕生所追求的目标，但是能让我财富自由的手段寥寥无几，投资可能是目前唯一能让我看清的方向，我希望通过投资来创造我的财富。股票又是投资中相对没有门槛的，每个人只要开户就可以直接参与。20年是个小爆发的牛市，完全没有被疫情所影响的现象。但是就是这样的牛市，却让我亏钱了，基金赚的都要比自己投资多的多，深刻地感觉自己的投资股票能力，亟待提高。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">&lt;i class&#x3D;&quot;fa fa-angle-right&quot;&gt;&lt;&#x2F;i&gt;</a>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Levin lee</p>
+              <p class="site-description motion-element" itemprop="description">要么赶紧去死，要么精彩地活</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">19</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/yourname" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="897992093@qq.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://plus.google.com/yourname" target="_blank" title="Google">
+                      
+                        <i class="fa fa-fw fa-google"></i>Google</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/yourname" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.facebook.com/yourname" target="_blank" title="FB Page">
+                      
+                        <i class="fa fa-fw fa-facebook"></i>FB Page</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://vk.com/yourname" target="_blank" title="VK Group">
+                      
+                        <i class="fa fa-fw fa-vk"></i>VK Group</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://stackoverflow.com/yourname" target="_blank" title="StackOverflow">
+                      
+                        <i class="fa fa-fw fa-stack-overflow"></i>StackOverflow</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://youtube.com/yourname" target="_blank" title="YouTube">
+                      
+                        <i class="fa fa-fw fa-youtube"></i>YouTube</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://instagram.com/yourname" target="_blank" title="Instagram">
+                      
+                        <i class="fa fa-fw fa-instagram"></i>Instagram</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="skype:yourname?call|chat" target="_blank" title="Skype">
+                      
+                        <i class="fa fa-fw fa-skype"></i>Skype</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Levin lee</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
   }
-}
+</script>
 
-if (true) {
-  if (typeof Typed === 'function') subtitleType()
-  else $.getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js', subtitleType)
-} else {
-  subtitleType()
-}</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="https://cdn.jsdelivr.net/gh/lete114/CDN/Sum/sakura.js"></script>#樱花<canvas class="fireworks"></canvas><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="/js/third-party/fireworks.js"></script><script src="/js/third-party/activate-power-mode.js"></script><script>POWERMODE.colorful = true;
-POWERMODE.shake = true;
-document.body.addEventListener('input', POWERMODE);
-</script></div></body></html>
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
