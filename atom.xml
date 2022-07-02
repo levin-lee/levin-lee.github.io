@@ -341,9 +341,9 @@
       <category term="shell" scheme="http://levin-lee.github.io/categories/shell/"/>
     
     
-      <category term="编程" scheme="http://levin-lee.github.io/tags/%E7%BC%96%E7%A8%8B/"/>
-    
       <category term="linux" scheme="http://levin-lee.github.io/tags/linux/"/>
+    
+      <category term="编程" scheme="http://levin-lee.github.io/tags/%E7%BC%96%E7%A8%8B/"/>
     
   </entry>
   
@@ -416,9 +416,9 @@
     
     
     
-      <category term="python" scheme="http://levin-lee.github.io/tags/python/"/>
-    
       <category term="编程" scheme="http://levin-lee.github.io/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="python" scheme="http://levin-lee.github.io/tags/python/"/>
     
   </entry>
   
